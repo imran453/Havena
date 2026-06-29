@@ -5,8 +5,8 @@ const navTabs = ['Buy', 'Rent', 'Short-let']
 
 export const Header = () => {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-100 bg-white">
-      <div className="mx-auto flex w-[94%] max-w-[1280px] items-center justify-between gap-4 py-4">
+    <header className="fixed inset-x-0 top-0 z-50 h-[88px] border-b border-white/20 bg-white/[0.23] backdrop-blur-[7px]">
+      <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between gap-4 px-3">
         <div className="flex items-center gap-6">
           <Logo className="shrink-0" />
           <nav className="hidden items-center gap-6 lg:flex">
@@ -27,10 +27,10 @@ export const Header = () => {
         </div>
 
         <div className="flex items-center gap-4 md:gap-8">
-          <button className="hidden items-center gap-1.5 border-r border-gray-200 pr-4 text-sm font-medium text-gray-700 md:flex">
+          <button className="hidden items-center gap-1.5 border-r border-gray-400/60 pr-4 text-sm font-medium text-gray-800 md:flex">
             <span>Find Agent</span>
           </button>
-          <button className="hidden items-center gap-1.5 text-xs text-gray-700 md:flex">
+          <button className="hidden items-center gap-1.5 text-xs text-gray-800 md:flex">
             <IconPin className="size-4" />
             <span>Your Location</span>
           </button>

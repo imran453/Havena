@@ -34,18 +34,18 @@ const features = [
 export const WhyChoose = () => {
   return (
     <section className="mx-auto mt-28 w-[94%] max-w-[1280px] lg:mt-32">
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-[408px_1fr] lg:gap-10">
-        <div className="flex flex-col gap-7">
-          <div>
+      <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-[106px]">
+        <div className="flex flex-col gap-9 lg:w-[408px] lg:shrink-0">
+          <div className="flex flex-col gap-2">
             <h2 className="text-[32px] font-semibold leading-tight text-black sm:text-[36px]">
               Why Choose Havena
             </h2>
-            <p className="mt-2 max-w-[400px] text-lg leading-7 text-gray-500">
+            <p className="max-w-[400px] text-lg leading-7 text-gray-500">
               We&rsquo;re redefining the real estate experience in Nigeria with trust and transparency.
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             {features.map(({ icon: Icon, title, body, dark, iconBg }) => (
               <div
                 key={title}
@@ -66,46 +66,45 @@ export const WhyChoose = () => {
             ))}
           </div>
 
-          <button className="flex w-fit items-center gap-2.5 rounded-full bg-havena-green px-5 py-3 text-lg text-white transition-colors hover:bg-havena-green-light">
+          <button className="flex h-[50px] w-fit items-center gap-2.5 rounded-full bg-havena-green px-5 text-lg text-white transition-colors hover:bg-havena-green-light">
             Explore Listing
             <IconArrow className="size-5" />
           </button>
         </div>
 
-        <div className="flex flex-col gap-5">
-          <div className="aspect-[762/428] w-full overflow-hidden rounded-2xl">
+        <div className="flex flex-col gap-[25px] lg:w-[762px] lg:shrink-0">
+          <div className="aspect-[762/428] w-full overflow-hidden rounded-lg">
             <img
               src="/images/why-choose/collage-1.jpg"
               alt="Modern home exterior"
               className="size-full object-cover"
             />
           </div>
-          <div className="flex flex-col gap-5 sm:flex-row">
-            <div className="aspect-[434/293] overflow-hidden rounded-2xl sm:w-[59.13%]">
+          <div className="flex flex-col gap-[28px] sm:flex-row sm:items-center">
+            <div className="aspect-[434/293] overflow-hidden rounded-lg sm:w-[434px] sm:shrink-0">
               <img
                 src="/images/why-choose/collage-2.jpg"
                 alt="Property interior"
                 className="size-full object-cover"
               />
             </div>
-            <div className="relative aspect-[300/293] overflow-hidden rounded-2xl bg-black sm:w-[40.87%]">
+            <div className="relative aspect-[300/293] overflow-hidden rounded-lg sm:w-[300px] sm:shrink-0">
               <img
                 src="/images/why-choose/collage-3.jpg"
                 alt=""
-                className="size-full object-cover opacity-15"
+                className="absolute inset-0 size-full object-cover"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-4 text-center">
-                <div
-                  className="inline-flex items-center justify-center gap-[13.878px] rounded-2xl bg-havena-orange"
-                  style={{ height: '68px', padding: '13.878px' }}
-                >
-                  <span className="text-2xl font-semibold text-white sm:text-3xl">95%</span>
-                </div>
-                <p className="text-lg font-semibold text-white">Customer Satisfaction</p>
-                <p className="max-w-[220px] text-sm leading-6 text-gray-400">
-                  Delivering exceptional service, ensuring client satisfaction every step
-                </p>
+              <div className="absolute inset-0 bg-[rgba(0,0,0,0.93)]" />
+
+              <div className="absolute left-1/2 top-[89px] flex h-[68px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[11px] bg-havena-orange px-[14px]">
+                <span className="text-[50px] font-semibold leading-none text-white">95%</span>
               </div>
+              <p className="absolute left-1/2 top-[122px] -translate-x-1/2 whitespace-nowrap text-xl font-semibold text-white">
+                Customer Satisfaction
+              </p>
+              <p className="absolute left-1/2 top-[150px] w-[232px] -translate-x-1/2 text-center text-base leading-[26px] text-gray-400">
+                Delivering exceptional service, ensuring client satisfaction every step
+              </p>
             </div>
           </div>
         </div>

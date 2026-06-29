@@ -1,14 +1,14 @@
 export const CTABand = () => {
   return (
-    <section className="relative mx-auto mt-28 w-[94%] max-w-[1392px] overflow-hidden rounded-3xl bg-[#ddddde] py-16 lg:mt-32 lg:py-0 lg:h-[630px]">
+    <section className="relative mx-auto mt-28 w-[94%] max-w-[1392px] overflow-hidden rounded-3xl bg-[#ddddde] py-16 lg:mt-32 lg:h-[630px] lg:py-0">
       <img
-        src="/images/cta/map-pattern.png"
+        src="/images/cta/map-pattern.jpg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-y-0 left-0 h-full w-[55%] object-cover opacity-50"
+        className="absolute inset-y-0 left-0 hidden h-full w-[51%] object-cover lg:block"
       />
       <div className="relative z-10 mx-auto flex h-full max-w-[1280px] flex-col items-start justify-center gap-7 px-6 lg:absolute lg:inset-0 lg:px-0">
-        <div className="lg:ml-[51%] lg:w-[532px]">
+        <div className="lg:ml-[53.5%] lg:w-[532px] lg:pr-6">
           <h2 className="text-[32px] font-bold leading-tight text-black sm:text-[44px] lg:text-[48px]">
             Ready to Find Your Dream Home?
           </h2>

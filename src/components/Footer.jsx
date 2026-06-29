@@ -17,13 +17,6 @@ const socials = [IconFacebook, IconInstagram, IconTwitter, IconLinkedin]
 export const Footer = () => {
   return (
     <footer className="relative mt-28 overflow-hidden border-t border-gray-100 bg-havena-green-light pb-10 pt-10 lg:mt-32">
-      <p
-        aria-hidden
-        className="pointer-events-none absolute -bottom-10 left-1/2 -translate-x-1/2 select-none whitespace-nowrap text-[18vw] font-bold leading-none tracking-tighter text-white/10 lg:text-[260px]"
-      >
-        Havena
-      </p>
-
       <div className="relative z-10 mx-auto w-[94%] max-w-[1280px]">
         <div className="flex flex-col gap-10 border-b border-white/20 pb-12 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-[503px]">
@@ -63,15 +56,15 @@ export const Footer = () => {
             </p>
             <div className="mt-6 flex items-center gap-3">
               {socials.map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="Social link"
-                  className="flex size-11 items-center justify-center rounded-full bg-[#f9fafb] text-havena-green transition-opacity hover:opacity-80"
-                >
-                  <Icon className="size-5" />
-                </a>
-              ))}
+  <a
+    key={i}
+    href="#"
+    aria-label="Social link"
+    className="flex size-11 items-center justify-center rounded-full bg-[#f9fafb] text-havena-green transition-opacity hover:opacity-80"
+  >
+    <Icon className="size-5" />
+  </a>
+))}
             </div>
           </div>
 
@@ -113,6 +106,13 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+
+      <p
+        aria-hidden
+        className="pointer-events-none absolute bottom-[-90px] left-0 hidden w-full select-none overflow-hidden whitespace-nowrap pl-[4%] text-[clamp(120px,18vw,260px)] font-bold leading-none tracking-tighter text-white/10 sm:block"
+      >
+        Havena
+      </p>
     </footer>
   )
 }
