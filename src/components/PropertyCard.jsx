@@ -10,9 +10,13 @@ export const PropertyCard = ({ property }) => {
   const { tag, price, title, location, rating, area, baths, beds, image } = property
 
   return (
-    <article className="flex flex-col gap-6">
+    <article className="flex cursor-pointer flex-col gap-6 rounded-2xl transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]">
       <div className="relative h-[280px] overflow-hidden rounded-2xl sm:h-[340px] lg:h-[388px]">
-        <img src={image} alt={title} className="size-full object-cover" />
+        <img
+          src={image}
+          alt={title}
+          className="size-full object-cover transition-transform duration-300 hover:scale-105"
+        />
         <div className="absolute inset-x-4 top-4 flex items-center justify-between sm:inset-x-5">
           <span className={`rounded-lg px-3 py-1.5 text-xs font-bold text-white ${tagColors[tag] ?? 'bg-havena-orange'}`}>
             {tag}
@@ -20,6 +24,7 @@ export const PropertyCard = ({ property }) => {
           <button
             aria-label="Save property"
             className="flex size-9 items-center justify-center rounded-full bg-white/90 backdrop-blur-sm transition-colors hover:bg-white"
+            onClick={(e) => e.stopPropagation()}
           >
             <IconHeart className="size-5 text-gray-700" />
           </button>

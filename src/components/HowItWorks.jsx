@@ -25,7 +25,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="mx-auto mt-28 w-[94%] max-w-[1280px] lg:mt-32">
+    <section className="mx-auto mt-16 w-[94%] max-w-[1280px] lg:mt-20">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <h2 className="text-[28px] font-semibold text-black sm:text-[32px]">How it works</h2>
         <p className="max-w-[300px] text-lg text-gray-400 sm:text-right">

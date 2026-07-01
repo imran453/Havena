@@ -16,7 +16,7 @@ const socials = [IconFacebook, IconInstagram, IconTwitter, IconLinkedin]
 
 export const Footer = () => {
   return (
-    <footer className="relative mt-28 overflow-hidden border-t border-gray-100 bg-havena-green-light pb-10 pt-10 lg:mt-32">
+    <footer className="relative mt-16 overflow-hidden border-t border-gray-100 bg-havena-green-light pb-10 pt-10 lg:mt-20">
       <div className="relative z-10 mx-auto w-[94%] max-w-[1280px]">
         <div className="flex flex-col gap-10 border-b border-white/20 pb-12 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-[503px]">

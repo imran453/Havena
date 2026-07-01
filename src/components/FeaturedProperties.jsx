@@ -77,7 +77,7 @@ export const FeaturedProperties = () => {
   const [active, setActive] = useState('All')
 
   return (
-    <section className="mt-28 bg-[#f5f6f7] px-[5%] py-14 lg:mt-32 lg:px-20 lg:py-16">
+    <section className="mt-16 bg-[#f5f6f7] px-[5%] py-14 lg:mt-20 lg:px-20 lg:py-16">
       <div className="mx-auto max-w-[1280px]">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex flex-col gap-3">

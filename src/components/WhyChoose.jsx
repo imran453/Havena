@@ -33,7 +33,7 @@ const features = [
 
 export const WhyChoose = () => {
   return (
-    <section className="mx-auto mt-28 w-[94%] max-w-[1280px] lg:mt-32">
+    <section className="mx-auto mt-16 w-[94%] max-w-[1280px] lg:mt-20">
       <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-[106px]">
         <div className="flex flex-col gap-9 lg:w-[408px] lg:shrink-0">
           <div className="flex flex-col gap-2">
@@ -88,24 +88,26 @@ export const WhyChoose = () => {
                 className="size-full object-cover"
               />
             </div>
-            <div className="relative aspect-[300/293] overflow-hidden rounded-lg sm:w-[300px] sm:shrink-0">
-              <img
-                src="/images/why-choose/collage-3.jpg"
-                alt=""
-                className="absolute inset-0 size-full object-cover"
-              />
-              <div className="absolute inset-0 bg-[rgba(0,0,0,0.93)]" />
+            <div className="relative w-full overflow-hidden rounded-lg sm:w-[300px] sm:shrink-0" style={{ aspectRatio: '300/293' }}>
+  <img
+    src="/images/why-choose/collage-3.jpg"
+    alt=""
+    className="absolute inset-0 size-full object-cover"
+  />
+  <div className="absolute inset-0 bg-[rgba(0,0,0,0.93)]" />
 
-              <div className="absolute left-1/2 top-[89px] flex h-[68px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[11px] bg-havena-orange px-[14px]">
-                <span className="text-[50px] font-semibold leading-none text-white">95%</span>
-              </div>
-              <p className="absolute left-1/2 top-[122px] -translate-x-1/2 whitespace-nowrap text-xl font-semibold text-white">
-                Customer Satisfaction
-              </p>
-              <p className="absolute left-1/2 top-[150px] w-[232px] -translate-x-1/2 text-center text-base leading-[26px] text-gray-400">
-                Delivering exceptional service, ensuring client satisfaction every step
-              </p>
-            </div>
+  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-4 text-center">
+    <div className="inline-flex h-[68px] items-center justify-center rounded-[11px] bg-havena-orange px-[14px]">
+      <span className="text-[50px] font-semibold leading-none text-white">95%</span>
+    </div>
+    <p className="whitespace-nowrap text-xl font-semibold text-white">
+      Customer Satisfaction
+    </p>
+    <p className="w-[232px] text-center text-base leading-[26px] text-gray-400">
+      Delivering exceptional service, ensuring client satisfaction every step
+    </p>
+  </div>
+</div>
           </div>
         </div>
       </div>

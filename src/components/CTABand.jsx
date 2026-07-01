@@ -1,6 +1,6 @@
 export const CTABand = () => {
   return (
-    <section className="relative mx-auto mt-28 w-[94%] max-w-[1392px] overflow-hidden rounded-3xl bg-[#ddddde] py-16 lg:mt-32 lg:h-[630px] lg:py-0">
+    <section className="relative mx-auto mt-16 w-[94%] max-w-[1392px] overflow-hidden rounded-3xl bg-[#ddddde] py-16 lg:mt-20 lg:h-[630px] lg:py-0">
       <img
         src="/images/cta/map-pattern.jpg"
         alt=""
